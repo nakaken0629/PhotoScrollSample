@@ -14,6 +14,7 @@
 		BAF133AB1C74C30D001D16A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF133A91C74C30D001D16A8 /* LaunchScreen.storyboard */; };
 		BAF133B61C74C30D001D16A8 /* PhotoScrollSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF133B51C74C30D001D16A8 /* PhotoScrollSampleTests.swift */; };
 		BAF133C11C74C30D001D16A8 /* PhotoScrollSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF133C01C74C30D001D16A8 /* PhotoScrollSampleUITests.swift */; };
+		BAF133CF1C74C864001D16A8 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF133CE1C74C864001D16A8 /* MyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BAF133BC1C74C30D001D16A8 /* PhotoScrollSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoScrollSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF133C01C74C30D001D16A8 /* PhotoScrollSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScrollSampleUITests.swift; sourceTree = "<group>"; };
 		BAF133C21C74C30D001D16A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF133CE1C74C864001D16A8 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				BAF133A01C74C30D001D16A8 /* AppDelegate.swift */,
 				BAF133A21C74C30D001D16A8 /* ViewController.swift */,
+				BAF133CE1C74C864001D16A8 /* MyCell.swift */,
 				BAF133A41C74C30D001D16A8 /* Main.storyboard */,
 				BAF133A71C74C30D001D16A8 /* Assets.xcassets */,
 				BAF133A91C74C30D001D16A8 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF133CF1C74C864001D16A8 /* MyCell.swift in Sources */,
 				BAF133A31C74C30D001D16A8 /* ViewController.swift in Sources */,
 				BAF133A11C74C30D001D16A8 /* AppDelegate.swift in Sources */,
 			);
@@ -351,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -390,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
