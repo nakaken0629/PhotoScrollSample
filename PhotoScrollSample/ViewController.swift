@@ -29,10 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = self.tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCell
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("MyCell") as! MyCell
-        cell.photoImage.image = UIImage(named: "Ateam")
-        cell.photo2Image.image = UIImage(named: "Ateam")
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCell
         cell.commentLabel.text = self.items[indexPath.item]
         return cell
     }

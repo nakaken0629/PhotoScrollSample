@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87E28DB01C754C2C002E2AA7 /* MyPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E28DAF1C754C2C002E2AA7 /* MyPhotoCell.swift */; };
 		BAF133A11C74C30D001D16A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF133A01C74C30D001D16A8 /* AppDelegate.swift */; };
 		BAF133A31C74C30D001D16A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF133A21C74C30D001D16A8 /* ViewController.swift */; };
 		BAF133A61C74C30D001D16A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF133A41C74C30D001D16A8 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87E28DAF1C754C2C002E2AA7 /* MyPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPhotoCell.swift; sourceTree = "<group>"; };
 		BAF1339D1C74C30C001D16A8 /* PhotoScrollSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoScrollSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF133A01C74C30D001D16A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAF133A21C74C30D001D16A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				BAF133A01C74C30D001D16A8 /* AppDelegate.swift */,
 				BAF133A21C74C30D001D16A8 /* ViewController.swift */,
 				BAF133CE1C74C864001D16A8 /* MyCell.swift */,
+				87E28DAF1C754C2C002E2AA7 /* MyPhotoCell.swift */,
 				BAF133A41C74C30D001D16A8 /* Main.storyboard */,
 				BAF133A71C74C30D001D16A8 /* Assets.xcassets */,
 				BAF133A91C74C30D001D16A8 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E28DB01C754C2C002E2AA7 /* MyPhotoCell.swift in Sources */,
 				BAF133CF1C74C864001D16A8 /* MyCell.swift in Sources */,
 				BAF133A31C74C30D001D16A8 /* ViewController.swift in Sources */,
 				BAF133A11C74C30D001D16A8 /* AppDelegate.swift in Sources */,
@@ -491,6 +495,7 @@
 				BAF133C71C74C30D001D16A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAF133C81C74C30D001D16A8 /* Build configuration list for PBXNativeTarget "PhotoScrollSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				BAF133CA1C74C30D001D16A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAF133CB1C74C30D001D16A8 /* Build configuration list for PBXNativeTarget "PhotoScrollSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				BAF133CD1C74C30D001D16A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
