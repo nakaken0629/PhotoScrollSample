@@ -9,9 +9,19 @@
 import UIKit
 
 class MyCell : UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+    var photos = 1
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var commentLabel: UILabel!
+    
+    init(style: UITableViewCellStyle, reuseIdentifier: String?, photos: Int) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.photos = photos
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -20,7 +30,8 @@ class MyCell : UITableViewCell, UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        print ("numberOfItemsInSection")
+        return self.photos
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

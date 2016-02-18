@@ -9,9 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    private let items = ["アイテム1", "アイテム2", "アイテム3"]
+    let dataSource : [(comment:String, photos: Int)] = [
+        (comment: "アイテム1", photos: 1),
+        (comment: "アイテム2", photos: 2),
+        (comment: "アイテム3", photos: 3),
+        (comment: "アイテム4", photos: 4),
+        (comment: "アイテム5", photos: 5),
+        (comment: "アイテム6", photos: 6),
+        (comment: "アイテム7", photos: 7),
+        (comment: "アイテム8", photos: 8),
+        (comment: "アイテム9", photos: 9),
+        (comment: "アイテム10", photos: 10),
+    ]
     @IBOutlet weak var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,12 +36,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+        return self.dataSource.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        print("creating MyCell")
         let cell = self.tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCell
-        cell.commentLabel.text = self.items[indexPath.item]
+        print("created MyCell")
+        cell.photos = self.dataSource[indexPath.row].photos
+        cell.commentLabel.text = self.dataSource[indexPath.item].comment
+        cell.collectionView.reloadData()
         return cell
     }
 }
